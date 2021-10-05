@@ -11,25 +11,16 @@
     <body>
             <nav class="navbar navbar-expand-lg navbar-dark bg-primary navcss">
                 <!-- Brand -->
-                <a class="navbar-brand" href="#">
-                    <img id="logo"src="./assets/img/gnh_logo.png" width="60" height="60" class="d-inline-block align-top" alt="">
+                <a id="logo" class="navbar-brand" href="#">
                 </a>
-                <h1 id="title" class="text-white"></h1>
+                <div id="title"></div>
                 <!-- Links -->
                 <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a id="about" class="nav-link text-white" href="#"></a>
+                <li id="about" class="nav-item">
                 </li>
                 <!-- Dropdown -->
-                <li class="nav-item dropdown pr-3">
-                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
-                    Activity
-                    </a>
-                    <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Company</a>
-                    <a class="dropdown-item" href="#">News</a>
-                    <a class="dropdown-item" href="#">Tutor</a>
-                    </div>
+                <li id="activity" class="nav-item dropdown pr-3">
+            
                 </li>
                 </ul>
             </nav>
@@ -38,14 +29,20 @@
                 url: 'nav.json',
                 dataType: 'json',
                 success: function(data) {
-                    var t = $('<h2 class="text-white" style="padding-buttom: 10px">'+ data.title +'</h2>')
+                    var img = $(' <img id="logo"src="'+data.logo+'"width="60" height="60" class="d-inline-block align-top" alt="">')
+                    var t = $('<h1 class="text-white" style="padding-buttom: 10px">'+ data.title +'</h1>')
                     var a = $(' <a class="nav-link text-white" href="#">'+data.about+'</a>')
+                    var act = $(' <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">'
+                    +data.activity+ '</a>'
+                    +'<div class="dropdown-menu">'
+                    +'<a class="dropdown-item" href="#">'+data.act[0]+'</a>'
+                    +'<a class="dropdown-item" href="#">'+data.act[1]+'</a>'
+                    +'<a class="dropdown-item" href="#">'+data.act[2]+'</a>'+
+                    '</div>')
                     $('#title').append(t)
                     $('#about').append(a)
-                    // for (var i=0; i<data.length; i++) {
-                    //     var row = $('<tr><td>' + data[i].zipcode+ '</td><td>' + data[i].city + '</td><td>' + data[i].county + '</td></tr>');
-                    //     $('#myTable').append(row);
-                    // }
+                    $('#activity').append(act)
+                    $('#logo').append(img)
                 },
                 error: function(jqXHR, textStatus, errorThrown){
                     alert('Error: ' + textStatus + ' - ' + errorThrown);

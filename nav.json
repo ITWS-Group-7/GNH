@@ -1,5 +1,7 @@
 {
-    "logo":"assets/img/gnh_logo.png",
+    "logo":"./assets/img/gnh_logo.png",
     "title":"GNH",
-    "about":"About"
+    "about":"About",
+    "activity": "Activity",
+    "act": ["Company","News","Tutor"]
 }
