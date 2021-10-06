@@ -1,6 +1,7 @@
 
 .form{
     text-align:center;
+    display:inline-block;
 }
 #fname{
     align-content:center;
