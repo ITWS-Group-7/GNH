@@ -1,5 +1,5 @@
 $.ajax({
-    url: 'nav.json',
+    url: 'data.json',
     dataType: 'json',
     success: function(data) {
         var img = $(' <img id="logo"src="'+data.logo+'"width="60" height="60" class="d-inline-block align-top" alt="">')
@@ -22,7 +22,7 @@ $.ajax({
     }
 });
 $.ajax({
-    url: 'nav.json',
+    url: 'data.json',
     dataType: 'json',
     success: function(data) {
      var topic = $(' <h6 class="text-uppercase mb-4 font-weight-bold">'+data.footer.topic+'</h6>'+'<p>'+data.footer.context+'</p>')
