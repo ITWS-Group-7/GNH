@@ -3,5 +3,16 @@
     "title":"GNH",
     "about":"About",
     "activity": "Activity",
-    "act": ["Company","News","Tutor"]
+    "act": ["Company","News","Tutor"],
+    "footer":{
+        "topic":"GNH",
+        "context":"context",
+        "contact":"Contact",
+        "address": "NY, Troy 12180, US",
+        "email": "gammanuetait@gmail.com",
+        "phone": "+ 01 234 567 88",
+        "facebook":"https://www.facebook.com/GNHAlphaChapter",
+        "copyright":"© 2020 Copyright: ",
+        "group":" ITWS GROUP 7 "
+    }
 }
