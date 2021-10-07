@@ -2,21 +2,124 @@
     text-align: center;
     margin-top: 10px;
     color:rgb(5, 5, 238);
+
+    /* Styling the text and giving it gradiant */
+    /* color:#ffffff;
+    background: -webkit-linear-gradient(#eee, rgb(5, 5, 238));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2); */
+
+    /* Make sure text is infront of background images */
+    /* display:block;
+    position: relative;
+    z-index: 3;*/
+} 
+
+/* @keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
 }
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+
+.stars, .twinkling, .clouds {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.stars {
+  background:#000 url(../images/stars.png) repeat top center;
+  z-index:0;
+}
+
+.twinkling{
+  background:transparent url(../images/twinkling.png) repeat top center;
+  z-index:1; /*z-index is more than stars so it's on top of stars */
+  /* animation:move-twink-back 200s linear infinite; */
+/* }  */
 
 .card{
     margin-top: 80px;
     margin-left: 50px;
     margin-right: 50px;
-
-
-#info{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
- 
+/* .newsletter_card{
+    margin-top: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
+    position: relative;
+    color: #eee;
+    z-index: 3; /*z-index 3 makes sure card elements are on top of starry night and twinkling background*/
+/* }  */
 
- 
+/* .clouds{
+    background:transparent url(clouds.png) repeat top center;
+    z-index:2;
+    opacity: .4;
+    animation:move-clouds-back 200s linear infinite;
+} */
+#info{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#newsletter_info{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 10px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-right: 50px;
+    padding-left: 50px;
+    /* skew forward css */
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    animation: transitionIn 0.4s;
+  }
+
+  @keyframes transitionIn {
+    from{
+      margin-right: 0%;
+      width: 30%;
+    }
+
+    to {
+      margin-right: 0%;
+      width: 100%;
+    }
+  }
+
+  #newsletter_info:hover, #newsletter_info:focus, #newsletter_info:active{
+    cursor: pointer;
+    -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    /* skew forward hover */
+    -webkit-transform: skew(-10deg);
+    transform: skew(-10deg);
+  }
+
+/* #info{
+    box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 white;
+} */
+
+
+
+
 
   .card-title{
     color:rgb(5, 5, 238);
@@ -25,100 +128,26 @@
   .category{
       color:grey;
       font-weight: bold;
-    
+
   }
 
   .company{
       margin-left: 350px;
       width: 450px;
       float:right;
-      
+
   }
+/* 
+#newsletter_card_body {
+  background: #2980B9;  /* fallback for old browsers */
+   /* background: -webkit-linear-gradient(to left, #FFFFFF, #6DD5FA, #2980B9);  Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to left, #FFFFFF, #6DD5FA, #2980B9); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* padding-right: 200px; */
+/* } */ 
 
-
- #hs_title{
-     text-align: center;
-    color: blue;
- }
-
-
-
-
-
- h1{
-     font-size: 3rem;
-     color: blue;
-
-
- }
-
- .btn{
-     font-weight: 700;
-     border-radius: 300px;
-     text-transform: uppercase;
- }
-
- .btn-lg{
-     padding: 1rem 2rem; 
- }
-
-
- #school_logo{
-     height: 300px;
-     width: 300px;
- }
-
- #gnh_logo{
-    height: 300px;
-    width: 300px;
- }
-
-
-
- .row_logo{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px; 
- }
-
-
- .row_about{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px; 
- }
-
-#about{
-    margin-top:100px;
-    scroll-snap-align: center ;
-    text-align: center;
+#newsletter_img {
+  height: 300px;
+  width: 500px;
 }
 
-.row_about{
-    margin-top: 30px;
-}
 
-h5{
-    text-align: left;
-    margin-left: 5px;
-color:rgb(47, 44, 44);
-
-}
-
-.about_title:before{
-    content: "_____";
-    color: blue;
-    position: absolute;
-    top: 660px;
-    left:350px;
-}
-
-.about_title:after{
-    content: "_____";
-    color: blue;
-    position: absolute;
-    top: 660px;
-    right: 350px;
-}
-  
-  
