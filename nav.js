@@ -11,7 +11,7 @@ $.ajax({
         +'<a class="dropdown-item" href="#">'+data.act[1]+'</a>'
         +'<a class="dropdown-item" href="#">'+data.act[2]+'</a>'+
         '</div>')
-        $('#about').append(a)
+        $('#nabout').append(a)
         $('#activity').append(act)
         $('#logo').append(img)
     },

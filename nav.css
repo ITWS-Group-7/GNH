@@ -6,6 +6,12 @@ footer {
     color:#fff;
   }
 
-  .navcss{
-      position: sticky;
-  }
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
