@@ -1,0 +1,124 @@
+.title{
+    text-align: center;
+    margin-top: 10px;
+    color:rgb(5, 5, 238);
+}
+
+.card{
+    margin-top: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+
+#info{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+ 
+
+ 
+
+  .card-title{
+    color:rgb(5, 5, 238);
+  }
+
+  .category{
+      color:grey;
+      font-weight: bold;
+    
+  }
+
+  .company{
+      margin-left: 350px;
+      width: 450px;
+      float:right;
+      
+  }
+
+
+ #hs_title{
+     text-align: center;
+    color: blue;
+ }
+
+
+
+
+
+ h1{
+     font-size: 3rem;
+     color: blue;
+
+
+ }
+
+ .btn{
+     font-weight: 700;
+     border-radius: 300px;
+     text-transform: uppercase;
+ }
+
+ .btn-lg{
+     padding: 1rem 2rem; 
+ }
+
+
+ #school_logo{
+     height: 300px;
+     width: 300px;
+ }
+
+ #gnh_logo{
+    height: 300px;
+    width: 300px;
+ }
+
+
+
+ .row_logo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px; 
+ }
+
+
+ .row_about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px; 
+ }
+
+#about{
+    margin-top:100px;
+    scroll-snap-align: center ;
+    text-align: center;
+}
+
+.row_about{
+    margin-top: 30px;
+}
+
+h5{
+    text-align: left;
+    margin-left: 5px;
+color:rgb(47, 44, 44);
+
+}
+
+.about_title:before{
+    content: "_____";
+    color: blue;
+    position: absolute;
+    top: 660px;
+    left:350px;
+}
+
+.about_title:after{
+    content: "_____";
+    color: blue;
+    position: absolute;
+    top: 660px;
+    right: 350px;
+}
+  
+  
