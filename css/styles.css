@@ -268,3 +268,25 @@ color:rgb(47, 44, 44);
   height: 300px;
   width: 500px;
 }
+
+.form{
+    text-align:center;
+    display:inline-block;
+}
+#fname{
+    align-content:center;
+}
+
+#message{
+    height:200px;
+    width:400px;
+}
+
+
+
+  .totor{
+      margin-left: 350px;
+      width: 300px;
+      float:right;
+      
+  }
