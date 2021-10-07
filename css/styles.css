@@ -192,10 +192,10 @@ color:rgb(47, 44, 44);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#newsletter_info{
+.newsletter_info{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 10px 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding-right: 50px;
-    padding-left: 50px;
+    /* padding-left: 50px; */
     /* skew forward css */
     display: inline-block;
     vertical-align: middle;
@@ -222,7 +222,7 @@ color:rgb(47, 44, 44);
     }
   }
 
-  #newsletter_info:hover, #newsletter_info:focus, #newsletter_info:active{
+  .newsletter_info:hover, #newsletter_info:focus, #newsletter_info:active{
     cursor: pointer;
     -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
