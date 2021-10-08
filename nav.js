@@ -2,7 +2,7 @@ $.ajax({
     url: 'data.json',
     dataType: 'json',
     success: function(data) {
-        var img = $(' <img id="logo"src="'+data.logo+'"width="60" height="60" class="d-inline-block align-top" alt="">')
+        var img = $('<a href="home.html"> <img id="logo"src="'+data.logo+'"width="60" height="60" class="d-inline-block align-top" alt=""></a>')
         var a = $(' <a class="nav-link text-white" href="home.html">'+data.about+'</a>')
         var act = $(' <a class="nav-link dropdown-toggle text-white" href="activites.html" id="navbardrop" data-toggle="dropdown">'
         +data.activity+ '</a>'
@@ -66,3 +66,21 @@ $.ajax({
        $('#academict').append(tutor)
     }
 })
+
+const body = document.body,
+    scrolling = document.getElementsByClassName("smooth")[0],
+    height = scrolling.getBoundingClientRect().height,
+    speed = 0.04;
+
+var offset = 0;
+
+body.style.height = Math.floor(height) + "px";
+
+function smooth() {
+    offset += (window.pageYOffset - offset) * speed;
+    var scroll = "translateY(-" + offset + "px)";
+    scrolling.style.transform = scroll;
+    callScroll = requestAnimationFrame(smooth);
+}
+
+smooth();
