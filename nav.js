@@ -2,8 +2,8 @@ $.ajax({
     url: 'data.json',
     dataType: 'json',
     success: function(data) {
-        var img = $('<a href="home.html"> <img id="logo"src="'+data.logo+'"width="60" height="60" class="d-inline-block align-top" alt=""></a>')
-        var a = $(' <a class="nav-link text-white" href="home.html">'+data.about+'</a>')
+        var img = $('<a href="index.html"> <img id="logo"src="'+data.logo+'"width="60" height="60" class="d-inline-block align-top" alt=""></a>')
+        var a = $(' <a class="nav-link text-white" href="index.html">'+data.about+'</a>')
         var act = $(' <a class="nav-link dropdown-toggle text-white" href="activites.html" id="navbardrop" data-toggle="dropdown">'
         +data.activity+ '</a>'
         +'<div class="dropdown-menu">'
