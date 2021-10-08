@@ -13,5 +13,12 @@
         "facebook":"https://www.facebook.com/GNHAlphaChapter",
         "copyright":"© 2020 Copyright: ",
         "group":" ITWS GROUP 7 "
+    },
+    "activities":{
+        "title":["COMPANY EXPOSE", "NEWSLETTER", "TUTORING"],
+        "category":["Careers/Networking","Updates","Academics"],
+        "text":["This is the largest event Gamma Nu Eta hosts each year. It is a casual networking event where students can get to know the recruiters before the career fair through fun, interactive activities in small groups, and will be a great opportunity to expand your personal network.","The newsletter is a once a year mailing that GNH sends to alumni updating them about the goings on in ITWS and RPI at large."],
+        "tutor":["GNH does tutoring sections every Wednesday for free. Click", "to sign up and express your issues so that our tutors will be better prepared to assist you"]
+
     }
 }

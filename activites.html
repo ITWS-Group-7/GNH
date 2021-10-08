@@ -8,22 +8,46 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href= "css/styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <title>Gamma Nu Eta | Activities</title>
   </head>
   <body>
-    <h1 class = "title">ACTIVITIES</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+              <!-- Brand -->
+      <a id="logo" class="navbar-brand" href="#">
+      </a>
+      <div id="title"></div>
+      <!-- Links -->
+      <ul class="navbar-nav ml-auto">
+      <li id="nabout" class="nav-item">
+      </li>
+      <!-- Dropdown -->
+      <li id="activity" class="nav-item dropdown pr-3">
+  
+      </li>
+      </ul>
+
+      </div>
+  </nav>
+
+    <h1 class = "title pt-5">ACTIVITIES</h1>
     
 
     <div class="card newsletter_info" id = "info" >
         <div class="row">
         
           <div class="col-md-4">
-            <div class="card-body">
-                <p class = "category">Careers/Networking</p>
+            <div id="careersnetworking" class="card-body">
+                <!-- <p class = "category">Careers/Networking</p>
               <h2 class="card-title">COMPANY EXPOSE</h2>
               <p class="card-text" >
                 This is the largest event Gamma Nu Eta hosts each year. It is a casual networking event where students can get to know the recruiters before the career fair through fun, interactive activities in small groups, and will be a great opportunity to expand your personal network.
-              </p>
+              </p> -->
               
             </div>
           </div>
@@ -45,21 +69,16 @@
             <div class="row">
             
               <div class="col-md-4">
-                <div class="card-body" >
-                    <p class = "category">Updates</p>
-                  <h2 class="card-title">NEWSLETTER</h2>
-                  <p class="card-text" >
-                    The newsletter is a once a year mailing that GNH sends to alumni 
-                    updating them about the goings on in ITWS and RPI at large.
-                  </p>
-                  <div class="pb-3">
+                <div id= "newsletterajax"class="card-body" >
+                </div>
+                  <div class="container pb-3">
                     <a href= "https://mailchi.mp/9dbde67d4ed1/itws-student-newsletter-spring-2021" type="button" class="btn btn-info">See Latest Newsletter</a>
                   </div>
-                  <div>
+                  <div class="container pb-4">
                     <a href="http://eepurl.com/ht1kNf" type="button" class="btn btn-info">Sign-Up for Newsletter</a>
                   </div>
                 </div>
-              </div>
+              
               
     
               <div class="col-md-8 " >
@@ -71,32 +90,63 @@
               </div>
             </div>
           </div>
-          <div class="card newsletter_info" id = "info"  >
-            <div class="row">
-            
-              <div class="col-md-4">
-                <div class="card-body">
+          <div  style="padding-bottom: 500px;">
+            <div class="card newsletter_info" id = "info"  >
+              <div class="row">
+              
+                <div class="col-md-4">
+                  <div id="academict"class="card-body">
     
-
-                    <p class = "category">Academic</p>
-                  <h2 class="card-title">Tutoring</h2>
-                  <p class="card-text" >
-                   GNH does tutoring sections every Wednesday for free. Click <a href="tutorap.html">Here</a> to sign up and express your issues so that our tutors will be better prepared to assist you
-               </div>
-              </div>
-                  
-              <div class="col-md-8 ">
-                <img class = "totor"
-                  src="images/tutorph.jpg"
-                     />
+                 </div>
+                </div>
+                    
+                <div class="col-md-8 ">
+                  <img class = "totor"
+                    src="images/tutorph.jpg"
+                       />
+                      </div>
                     </div>
+              </div>
+
+          </div>
+            <footer class="page-footer font-small pt-4">
+              <div class="container text-center text-md-left">
+              <div class="row text-center text-md-left mt-3 pb-3">
+                  <div id=topic class="col-md-8 mx-auto mt-3">
                   </div>
-            </div>
+                  <hr class="w-100 clearfix d-md-none">
+                  <div id="contact" class="col-md-4 pl-5 float-md-right mt-3">
+                  </div>
+              </div>
+              <hr>
+              <div class="row d-flex align-items-center">
+                  <div id="copyright" class="col-md-6 ">
+                  
+                  </div>
+                  <div class="col-md-6 ml-lg-0">
+                      <div class="text-center text-md-right">
+                          <ul class="list-unstyled list-inline">
+                          <li id="facebook" class="list-inline-item">
+                            
+                          </li>
+                          <li id="twitter" class="list-inline-item">
+                          </li>
+                          <li id="tiktok" class="list-inline-item">
+                    
+                          </li>
+                          <li id="linkedin" class="list-inline-item">
+                        
+                          </li>
+                          <li id="instagram" class="list-inline-item">
+                          
+                          </li>
+                          </ul>
+                      </div>
+                      </div>
+              </div>
+          </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    <script src="nav.js"></script>
   </body>
 </html>
